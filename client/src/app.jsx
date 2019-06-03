@@ -24,25 +24,27 @@ class App extends React.Component {
 
 		console.log('mounted');
 
-		$.get('http://localhost:3003/updates')
+		$.get('/updates')
 			.done((data) => {
 
 				console.log('[app.jsx: 27] got updates data back!!');
+				var updates = JSON.parse(data);
 
 				this.setState({
-					updates: data
+					updates: updates
 				})
 			})
 			.done(() => {
-				$.get(`http://localhost:3003/games/${this.state.id}`)
+				$.get(`/games_updates/${this.state.id}`)
 				.done((data) => {
 
 					console.log('[app.jsx: 37] game got!', data);
+					var game = JSON.parse(data);
 
 					this.setState({
-						game: data[0],
-						platforms: data[0].platforms.split(' '),
-						vr_supprt: data[0].vr_support.split(' ')
+						game: game[0],
+						platforms: game[0].platforms.split(' '),
+						vr_supprt: game[0].vr_support.split(' ')
 					})
 				})
 			})
@@ -85,6 +87,7 @@ class App extends React.Component {
 
 			)
 		} else { //state updates is not empty and thus can be acted on
+			console.log('state updates no longer empty', this.state.updates[0]);
 
 			return (
 				

@@ -3,7 +3,7 @@ const mysql2 = require('mysql2'); //needed to fix build issue with webpack
 const sequelize = new Sequelize('steam_updates', 'root', null, {
 	dialect: 'mysql',
 	dialectModule: mysql2, //needed to fix issue with webpack
-	host: 'localhost',
+	host: 'database_updates',
 	pool: {
 		max: 5,
 		min: 0,

@@ -12,7 +12,7 @@ App.use(express.static('public'));
 
 App.listen(port, () => { console.log(`listening on port ${port}!`)});
 
-App.get('/Updates', (req, res) => {
+App.get('/updates', (req, res) => {
 	db.getUpdates((err, data) => {
 		if (err) {
 			console.log('[server/index.jsx:18] err getting updates from db!', err);
@@ -24,7 +24,7 @@ App.get('/Updates', (req, res) => {
 	})
 })
 
-App.get('/Games/:id', (req, res) => {
+App.get('/games_updates/:id', (req, res) => {
 	console.log('get to server for games received!');
 	console.log('req params!', req.params);
 
