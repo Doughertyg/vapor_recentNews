@@ -12,7 +12,7 @@
     "test": "jest",
     "seed": "node seed.js",
     "initialize": "mysql -u root < schema.sql",
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
     "react-dev": "webpack -d --watch"
   },
   "repository": {
