@@ -19,7 +19,7 @@ App.get('/updates', (req, res) => {
 			return;
 		}
 
-		console.log('data received from db! chyaaa');
+		console.log('data received from db! chyaaa', data);
 		res.send(data);
 	})
 })
@@ -34,7 +34,7 @@ App.get('/games_updates/:id', (req, res) => {
 			return;
 		}
 
-		console.log('data received from db! chyaaa');
+		console.log('data received from db! chyaaa', data);
 		res.send(data);
 	})
 })

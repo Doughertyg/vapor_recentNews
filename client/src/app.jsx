@@ -28,10 +28,10 @@ class App extends React.Component {
 			.done((data) => {
 
 				console.log('[app.jsx: 27] got updates data back!!');
-				var updates = JSON.parse(data);
+				//var updates = JSON.parse(data);
 
 				this.setState({
-					updates: updates
+					updates: data
 				})
 			})
 			.done(() => {
