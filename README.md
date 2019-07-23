@@ -39,4 +39,4 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
-# steam_recentNews
+# recentNews
