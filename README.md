@@ -6,11 +6,11 @@ Dockerize code on branch dockerized
 
 ## Related Projects
 
-  - https://github.com/parks-and-recursion/steam_addReviewsandModals
-  - https://github.com/parks-and-recursion/steam_content
-  - https://github.com/parks-and-recursion/steam_reviews
-  - https://github.com/parks-and-recursion/steam_display
-  - https://github.com/parks-and-recursion/steam_navbar_sidebar
+  - https://github.com/parks-and-recursion/vapor_addReviewsandModals
+  - https://github.com/parks-and-recursion/vapor_content
+  - https://github.com/parks-and-recursion/vapor_reviews
+  - https://github.com/parks-and-recursion/vapor_display
+  - https://github.com/parks-and-recursion/vapor_navbar_sidebar
 
 ## Table of Contents
 
