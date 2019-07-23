@@ -1,6 +1,8 @@
-# Steam Store
+# Vapor Store
 
-> Game detail page from the steam store
+> Game detail page from the store
+Code on branch features_updates
+Dockerize code on branch dockerized
 
 ## Related Projects
 
@@ -18,7 +20,7 @@
 
 ## Usage
 
-> Clone to local repo, run webpac to bundle jsx files, start server, open page
+> Clone to local repo, run npm initialize to initialize my database schema, run npm seed to seed database, run npm start to start server, open browser to localhost:3003... Make sure database -u and -p match in seed script and that database names don't conflict or if using one db that the table names don't.
 
 ## Requirements
 
@@ -37,4 +39,4 @@ From within the root directory:
 npm install -g webpack
 npm install
 ```
-# steam_recentNews
+# recentNews

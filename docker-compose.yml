@@ -1,0 +1,22 @@
+version: '3'
+
+
+services:
+  updates:
+    container_name: steam_reviews_app
+    build: .
+    depends_on:
+      - 'database_updates'
+    ports:
+      - '80:3003'
+    volumes:
+      - ./:/src/app
+
+  database_updates:
+    container_name: updates_db
+    image: mysql:5.7
+    ports:
+      - '3306:3306'
+    environment:
+      - MYSQL_DATABASE=steam_updates
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
