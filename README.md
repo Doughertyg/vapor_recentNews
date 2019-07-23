@@ -1,6 +1,8 @@
-# Steam Store
+# Vapor Store
 
-> Game detail page from the steam store
+> Game detail page from the store
+Code on branch features_updates
+Dockerize code on branch dockerized
 
 ## Related Projects
 
