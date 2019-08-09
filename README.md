@@ -40,3 +40,4 @@ npm install -g webpack
 npm install
 ```
 # recentNews
+Recent Updates is the component. Implemented with microservices architecture
