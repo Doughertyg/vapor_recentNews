@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/Doughertyg/steam_recentNews#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "faker": "^4.1.0",
     "jest": "^24.8.0",
     "jquery": "^3.4.1",
